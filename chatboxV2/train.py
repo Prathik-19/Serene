@@ -1,13 +1,12 @@
-import numpy as np
-import random
 import json
 
+import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 
-from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
+from nltk_utils import bag_of_words, tokenize, stem
 
 with open('intents.json', 'r') as f:
     intents = json.load(f)
@@ -29,7 +28,7 @@ for intent in intents['intents']:
         xy.append((w, tag))
 
 # stem and lower each word
-ignore_words = ['?', '.', '!']
+ignore_words = ['?', '.', '!', ',', ':', ';', "'"]
 all_words = [stem(w) for w in all_words if w not in ignore_words]
 # remove duplicates and sort
 all_words = sorted(set(all_words))
@@ -54,17 +53,16 @@ X_train = np.array(X_train)
 y_train = np.array(y_train)
 
 # Hyper-parameters 
-num_epochs = 1000
-batch_size = 8
-learning_rate = 0.001
+num_epochs = 10000
+batch_size = 15
+learning_rate = 0.0017
 input_size = len(X_train[0])
-hidden_size = 8
+hidden_size = 15
 output_size = len(tags)
 print(input_size, output_size)
 
 
 class ChatDataset(Dataset):
-
     def __init__(self):
         self.n_samples = len(X_train)
         self.x_data = X_train
