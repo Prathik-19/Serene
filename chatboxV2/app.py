@@ -28,6 +28,7 @@ TEXT_REDCOLOR = "#EE2727"
 FONT = "Helvetica 14"
 FONT_BOLD = "Helvetica 13 bold"
 
+
 class ChatApplication:
     def __init__(self):
         self.window = Tk()
@@ -53,8 +54,8 @@ class ChatApplication:
         label1 = Label(image=test)
         label1.image = test
 
-            # Position image
-        label1.place(x= 200, y = -70)
+        # Position image
+        label1.place(x=200, y=-70)
 
         #send button image-----------------------
         image1 = Image.open("./sendPng.png")
@@ -101,7 +102,7 @@ class ChatApplication:
 
         #send button
         send_button = Button(bottom_label, image=test2, font=FONT_BOLD, width=20, bg=BG_WHITE,
-                             command= lambda: self._on_enter_pressed(None))
+                             command=lambda: self._on_enter_pressed(None))
         send_button.place(relx=0.83, rely=0.0098, relheight=0.03, relwidth=0.12)
 
     def _on_enter_pressed(self, event):
@@ -114,18 +115,19 @@ class ChatApplication:
 
         self.msg_entry.delete(0, END)
 
-        msg1 = f"{sender} : {msg}\n\n"
+        msg1 = f"({sender}) {msg}\n\n"
         self.text_widget.configure(state=NORMAL)
         self.text_widget.insert(END, msg1)
         self.text_widget.configure(state=DISABLED)
 
-        msg2 = f"{bot_name} : {get_response(msg)}\n\n"
+        msg2 = f"({bot_name}) {get_response(msg)}\n\n"
         self.text_widget.configure(state=NORMAL)
         self.text_widget.insert(END, msg2)
 
         self.text_widget.configure(state=DISABLED)
 
         self.text_widget.see(END)
+
 
 if __name__ == "__main__":
     app = ChatApplication()
