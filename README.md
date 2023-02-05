@@ -1,5 +1,5 @@
 # Serene: Cruzhacks23
-Shreedhar, Mani, Anish, Prathik
+## Authors: Shreedhar, Mani, Anish, Prathik
 
 # Inspiration
 Our inspiration comes from not having a real-time solution to mental health issues such as anxiety and panic attacks.
