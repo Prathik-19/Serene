@@ -1,0 +1,6 @@
+Before running the project, make sure to run following commands:
+
+flutter pub get
+flutter packages pub run build_runner build --delete-conflicting-outputs
+
+This generates necessary code for the project to compile
