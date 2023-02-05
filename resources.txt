@@ -1,1 +1,6 @@
-The code files in this folder were created under the guidance of the youtube "https://www.youtube.com/watch?v=Ea9jgBjQxEs". I have made the needed changes to the python script to meet our requirments. 
+1. The code files for chatboxV1 were created under the guidance of the youtube "https://www.youtube.com/watch?v=Ea9jgBjQxEs". We have made the needed changes to the python script to meet our requirements.
+2. The chatboxV2 is the final version of our chatbox. It was developed using this source "https://github.com/kevin-liu-tech/mental-health-nlp-chatbot". We added more data points in the neural network model to cover at most context of mental health related questions and issues. This will help the user get the more detailed and accurate responses. Also, the chatbox UI is changed to fit our app dynamics.
+
+ 
+
+
