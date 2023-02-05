@@ -1,4 +1,4 @@
-import random
+import random 
 
 R_GF = "I tried but they are all out of my neural-network!"
 R_ADVICE = "Im not there yet buddy. Ask my homie CHATGPT!"
