@@ -1,6 +1,16 @@
 {
   "intents": [
       {
+            "tag": "overwhelmed",
+            "keywords": [
+                "I'm feeling overwhelmed."
+            ],
+            "responses": [
+                "I'm sorry to hear that. Would you like to go ahead and do your daily mental health routine?"
+            ]
+      },
+
+      {
           "tag": "greeting",
           "keywords": [
               "Hi",
