@@ -2,7 +2,7 @@
   "intents": [
       {
           "tag": "greeting",
-          "patterns": [
+          "keywords": [
               "Hi",
               "Hey",
               "How are you",
@@ -21,7 +21,7 @@
       },
       {
           "tag": "goodbye",
-          "patterns": ["Bye", "See you later!", "Goodbye!", "Thank you"],
+          "keywords": ["Bye", "See you later!", "Goodbye!", "Thank you"],
           "responses": [
               "See you later! Take care!",
               "Have a lovely day! Take care and stay safe!",
@@ -30,12 +30,12 @@
       },
       {
           "tag": "thanks",
-          "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+          "keywords": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
           "responses": ["Happy to help!", "Any time!", "My pleasure"]
       },
       {
           "tag": "about",
-          "patterns": [
+          "keywords": [
               "What do you do?",
               "Who are you?",
               "What are you here for?",
@@ -51,7 +51,7 @@
       },
       {
           "tag": "anxiety",
-          "patterns": [
+          "keywords": [
               "I think I have anxiety",
               "What is anxiety?",
               "Tell me about anxiety",
@@ -65,7 +65,7 @@
       },
       {
           "tag": "depression",
-          "patterns": [
+          "keywords": [
               "I think I have depression",
               "What is depression?",
               "Tell me about depression",
@@ -79,7 +79,7 @@
       },
       {
           "tag": "schizophrenia",
-          "patterns": [
+          "keywords": [
               "I think I have schizophrenia",
               "What is schizophrenia?",
               "Tell me about schizophrenia",
@@ -93,7 +93,7 @@
       },
       {
           "tag": "funny",
-          "patterns": [
+          "keywords": [
               "Tell me a joke!",
               "Tell me something funny!",
               "Do you know a joke?"

@@ -20,7 +20,7 @@ for intent in intents['intents']:
     tag = intent['tag']
     # add to tag list
     tags.append(tag)
-    for pattern in intent['patterns']:
+    for pattern in intent['keywords']:
         # tokenize each word in the sentence
         w = tokenize(pattern)
         # add to our words list
