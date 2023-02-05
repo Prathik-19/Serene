@@ -32,7 +32,7 @@ class ChatApplication:
     def __init__(self):
         self.window = Tk()
         self._setup_main_window()
-    
+
     def run(self):
         self.window.mainloop()
 
@@ -103,7 +103,7 @@ class ChatApplication:
         send_button = Button(bottom_label, image=test2, font=FONT_BOLD, width=20, bg=BG_WHITE,
                              command= lambda: self._on_enter_pressed(None))
         send_button.place(relx=0.83, rely=0.0098, relheight=0.03, relwidth=0.12)
-        
+
     def _on_enter_pressed(self, event):
         msg = self.msg_entry.get()
         self._insert_message(msg, "USER")
