@@ -2,7 +2,7 @@
 ## Authors: Shreedhar, Mani, Anish, Prathik
 
 # Inspiration
-Our inspiration comes from not having a real-time solution to mental health issues such as anxiety and panic attacks.
+The inspiration behind creating this mental health app, Serene stems from the growing need for accessible and convenient mental health support. With the increasing stress levels and mental health issues in today's fast-paced world, it has become imperative to provide individuals with a platform to address their mental health concerns. The goal is to empower people with the tools and resources needed to prioritize and improve their mental well-being, breaking the stigma around seeking mental health help. Mental health apps aim to bridge the gap between individuals and mental health professionals, offering a supportive and confidential environment for individuals to take control of their mental health.
 
 # What it does
 The application is geared toward giving the user a personalized mental health routine and an AI chatbot that can provide real-time solutions to mental health concerns. Through extensive research, we found simple mental health exercises that have been medically proven to subside panic attacks and anxiety. These activities can be incorporated into the user's mental health routine based on a personality and mental health quiz the user takes during the setup of their account. The AI chatbot is intended to learn based on the user's mental health patterns and provide solutions geared toward the user's specific needs.
